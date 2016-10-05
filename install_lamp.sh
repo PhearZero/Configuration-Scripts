@@ -16,7 +16,7 @@ echo \<center\>\<h1\>My Demo App\</h1\>\<br/\>\</center\> > /var/www/html/phpinf
 echo \<\?php phpinfo\(\)\; \?\> >> /var/www/html/phpinfo.php
 
 # Pull over CHI Project Assets
-cd /var/www/
+cd /var/www/html/
 wget -rkpN -e robots=off http://dev.cgicenterforhealth.org
 
 # restart Apache
