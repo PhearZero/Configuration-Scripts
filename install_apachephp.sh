@@ -2,7 +2,7 @@
 apt-get -y update
 
 # install the LAMP stack
-apt-get -y install apache2 php5 php5-mysql  
+apt-get -y install apache2 php5 php5-mysql mysql-client
 
 # write some PHP
 echo \<center\>\<h1\>My Demo App\</h1\>\<br/\>\</center\> > /var/www/html/phpinfo.php
