@@ -13,6 +13,9 @@ cat >> /var/spool/cron/root << EOD
 * * * * * curl -k https://cgilampdemo.blob.core.windows.net/html/index.html > /var/www/html/index.html
 EOD
 
+# Restart Cron service
+service cron restart
+
 # Grab CHI Project Assets
 #wget -rkpN -e robots=off http://dev.cgicenterforhealth.org
 
