@@ -1,8 +1,8 @@
 #!/bin/bash
-apt-get -y update
+yum -y update
 
 # install the LAMP stack
-apt-get -y install apache2 php5 php5-mysql mysql-client
+yum -y install httpd php php-mysql
 
 # write some PHP
 echo \<center\>\<h1\>My Demo App\</h1\>\<br/\>\</center\> > /var/www/html/phpinfo.php
@@ -14,10 +14,10 @@ cat >> /var/spool/cron/root << EOD
 EOD
 
 # Restart Cron service
-service cron restart
+service crond restart
 
 # Grab CHI Project Assets
 #wget -rkpN -e robots=off http://dev.cgicenterforhealth.org
 
 # restart Apache
-apachectl restart
+service httpd start
