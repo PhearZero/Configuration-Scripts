@@ -1,5 +1,5 @@
 #!/bin/bash
-yum -y update
+yum -y check-update
 
 # install the LAMP stack
 yum -y install httpd php php-mysql
