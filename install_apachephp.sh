@@ -1,12 +1,12 @@
 #!/bin/bash
-yum -y update
+sudo yum -y update
 
 # install the LAMP stack
-yum -y install httpd php php-mysql
+sudo yum -y install httpd php php-mysql
 
 # write some PHP
-echo \<center\>\<h1\>My Demo App\</h1\>\<br/\>\</center\> > /var/www/html/phpinfo.php
-echo \<\?php phpinfo\(\)\; \?\> >> /var/www/html/phpinfo.php
+#echo \<center\>\<h1\>My Demo App\</h1\>\<br/\>\</center\> > /var/www/html/phpinfo.php
+#echo \<\?php phpinfo\(\)\; \?\> >> /var/www/html/phpinfo.php
 
 # Configure Cron to grab the latest default home page
 #cat >> /var/spool/cron/root << EOD
@@ -20,4 +20,4 @@ echo \<\?php phpinfo\(\)\; \?\> >> /var/www/html/phpinfo.php
 #wget -rkpN -e robots=off http://dev.cgicenterforhealth.org
 
 # restart Apache
-service httpd start
+sudo service httpd start
