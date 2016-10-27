@@ -1,5 +1,5 @@
 #!/bin/bash
-yum -y update
+yum -y check-update
 
 # Download and add the MySQL repository, then update.
 wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
