@@ -1,8 +1,8 @@
 #!/bin/bash
-sudo yum -y update
+yum -y update
 
 # install the LAMP stack
-sudo yum -y install httpd php php-mysql
+yum -y install httpd php php-mysql
 
 # write some PHP
 #echo \<center\>\<h1\>My Demo App\</h1\>\<br/\>\</center\> > /var/www/html/phpinfo.php
@@ -20,4 +20,4 @@ sudo yum -y install httpd php php-mysql
 #wget -rkpN -e robots=off http://dev.cgicenterforhealth.org
 
 # restart Apache
-sudo service httpd start
+service httpd start
