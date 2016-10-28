@@ -35,3 +35,9 @@ y
 y
 EOF
 
+mysql -u root -p$p -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '${p}';"
+
+
+
+
+
