@@ -2,7 +2,7 @@
 yum -y -q check-update
 
 # install the LAMP stack
-yum -y install httpd php php-mysql
+yum -y install httpd php php-mysql mysql
 
 # write some PHP
 #echo \<center\>\<h1\>My Demo App\</h1\>\<br/\>\</center\> > /var/www/html/phpinfo.php
